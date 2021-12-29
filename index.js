@@ -1,5 +1,3 @@
-// YOUR SCRIPT WILL BE INJECTED HERE.
-
 // Each token will have unique alphanumeric characters
 // This hash will be the source of entropy or variation use to determine the output of your algorithm.
 
