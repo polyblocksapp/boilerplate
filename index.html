@@ -32,6 +32,14 @@ function sfc32(hash) {
   };
 }
 window.pb.random = new sfc32(pb.hash);
+window.pb.randrange = function(min, max) {
+  return window.pb.random() * (max - min) + min;
+}
+window.pb.randint = function(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(window.pb.random() * (max - min + 1) + min);
+}
 </script>
 	
 <!-- import a dependent library if needed (at most a single library)
